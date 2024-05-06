@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>German276 Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <section class="hero is-info is-fullheight">
+        <div class="hero-head">
+          <nav class="navbar">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item">
+                  <h1 class="title">Maximilian Ganske</h1>
+                </a>
+                <span class="navbar-burger" data-target="navbarMenuHeroB">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div id="navbarMenuHeroB" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item">
+                        <h1 id="coins" class="title">Coins: 0</h1>
+                      </a>
+                    <a class="navbar-item">
+                        <h1 id="currentClick" class="title"> Coins per click: 1</h1>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div>
+            <button class="button is-rounded is-info is-large" style="bottom: -100px;" onclick="ultimateReward()">Ultimate Reward (cost 10000)</button>
+        </div>
+        <div class="hero-body">
+          <div class="container has-text-centered">
+                <h1 class="title" style="font-size: 40px">GERMAN276 - Tacitus Clicker</h1>
+                <button id="clickElement" style="all: unset;" onclick="clicking()">
+                <img style="border-radius:40%; width: 550px; height: 420px; display: block; margin: 0 auto; border: 5px solid; cursor: pointer;" src="https://facts.net/wp-content/uploads/2023/10/11-extraordinary-facts-about-tacitus-1696469356.jpg" />
+            </button>
+          </div> 
+        </div>
+        <img class="is-hidden" id="confetti" src="https://media0.giphy.com/media/8l32ntzylGawkD6DBX/giphy.gif?cid=6c09b952uoeprcu0sr5zkco4ohp23cljpmvmd7wv2mf30j31&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt="Computer man" style="width: 400px; height: 400px; position: absolute; top: 400px; left: 1000px;">
+        <img class="is-hidden" id="bowtie" src="https://i.pinimg.com/originals/9b/0e/31/9b0e3136ff7adf50dacd9d8e6a30e469.png" alt="Computer man" style="width: 70px; height: 70px; position: absolute; top: 360px; left: 830px;">
+        <div class="hero-foot">
+          <nav class="tabs is-boxed is-fullwidth">
+            <div class="container" style="font-size: 25px; right: 240px;">
+              <ul>
+                <li>
+                <button style="all: unset; cursor:pointer;" onclick="buyGermania()">
+                  <a>Germania +1</a>
+                </button>
+                </li>
+                <li>
+                    <button style="all: unset; cursor:pointer;" onclick="buyNibe()">
+                  <a>Nibelungenlied +5</a>
+                  </button>
+                </li>
+                <li>
+                    <button style="all: unset; cursor:pointer;" onclick="buyChristian()">
+                  <a>The Christian Nobility +10</a>
+                    </button>
+                </li>
+                <li>
+                    <button style="all: unset; cursor:pointer;" onclick="buyHermann()">
+                  <a>The Battle of Hermann +15</a>
+                    </button>
+                </li>
+                <li>
+                    <button style="all: unset; cursor:pointer;" onclick="buyWeimar()">
+                  <a>Visual Weimar +20</a>
+                  </button>
+                </li>
+                <li>
+                    <button style="all: unset; cursor:pointer;" onclick="buyAnglo()">
+                  <a>Liberty and the Anglo-Saxons +25</a>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <script src="script.js"></script>
+</body>
+</html>
